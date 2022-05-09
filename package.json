@@ -1,17 +1,22 @@
 {
-    "name": "ptgen",
-    "version": "0.0.1",
-    "description": "PT-Gen on Cloudflare Worker",
-    "main": "index.js",
-    "scripts": {
-        "build": "wrangler build",
-        "preview": "wrangler preview",
-        "publish": "wrangler publish"
-    },
-    "author": "Rhilip <rhilipruan@gmail.com>",
-    "license": "MIT",
-    "dependencies": {
-        "cheerio": "^1.0.0-rc.3",
-        "html2bbcode": "^1.2.6"
-    }
+  "name": "ptgen-lambda",
+  "version": "1.0.0",
+  "description": "Serverless HTTP API with DynamoDB and offline support",
+  "repository": "",
+  "author": "Christoph Gysin <christoph.gysin@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "global": "^4.4.0",
+    "node-fetch": "^3.2.4",
+    "serverless": "^3.16.0",
+    "uuid": "^2.0.3"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.12.0",
+    "html2bbcode": "^1.2.6",
+    "serverless-bundle": "^5.3.0",
+    "serverless-dynamodb-local": "^0.2.40",
+    "serverless-offline": "^6.8.0"
+  }
 }
